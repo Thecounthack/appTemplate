@@ -1,19 +1,24 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 
-import { useDispatch } from 'react-redux';
+import appReducer from '_redux/reducers/appReducer';
 
-import rootReducer from '_redux/reducers/rootReducer';
+export function makeStore() {
+    return configureStore({
+        reducer: {
+            app: appReducer,
+        },
+    });
+}
 
-const store = configureStore({
-    reducer: rootReducer,
-});
+const store = makeStore();
 
-export type RootState = ReturnType<typeof store.getState>
+export type AppState = ReturnType<typeof store.getState>;
 
 export type AppDispatch = typeof store.dispatch;
-export const useAppDispatch = () => useDispatch();
-export type AppThunk = ThunkAction<void, RootState, unknown, Action>
+
+export type AppThunk<ReturnType = void> = ThunkAction<ReturnType,
+    AppState,
+    unknown,
+    Action<string>>;
 
 export default store;
-
-// TODO: правильно организовать store
