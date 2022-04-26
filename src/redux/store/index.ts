@@ -15,3 +15,5 @@ export const useAppDispatch = () => useDispatch();
 export type AppThunk = ThunkAction<void, RootState, unknown, Action>
 
 export default store;
+
+// TODO: правильно организовать store

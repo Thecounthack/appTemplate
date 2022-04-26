@@ -47,6 +47,7 @@ module.exports = merge(common, {
         ],
     },
 
+    // TODO:  добавить поддержку PWA application
 
     plugins: [
         // == allow global constants | production
