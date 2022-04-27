@@ -13,12 +13,6 @@
     "husky-install": "husky install",
     "postinstall": "npm run husky-install"
   },
-  "lint-staged": {
-    "src/**/*.scss": [
-      "npm run lint:style-fix",
-      "npm run prettier:write"
-    ]
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -37,11 +31,13 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.4.1",
     "mini-css-extract-plugin": "^2.6.0",
     "postcss": "^8.4.12",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.4.4",
+    "postcss-scss": "^4.0.4",
     "prettier": "^2.6.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
@@ -64,5 +60,11 @@
     "react-dom": "^17.0.2",
     "react-redux": "^8.0.1",
     "react-router-dom": "^6.2.2"
+  },
+  "lint-staged": {
+    "src/**/*.scss": [
+      "npm run lint:style-fix",
+      "npm run prettier:write"
+    ]
   }
 }
