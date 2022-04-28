@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # appTemplate
 =======
 # AppTemplate
@@ -13,5 +12,4 @@
   - Js linter
   - Styles linter
   - Prettier
-- PWA app 
->>>>>>> 656cae0af9313fa9dcb28e03326388f8f48f9c5b
+- PWA app
