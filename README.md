@@ -1,5 +1,3 @@
-# appTemplate
-=======
 # AppTemplate
 ## Package
 - TypeScript
