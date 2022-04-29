@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "build/dist",
+    "outDir": "public",
     "module": "esnext",
     "target": "esnext",
     "lib": [
@@ -22,6 +22,7 @@
     "skipLibCheck": true,
     "experimentalDecorators": true,
     "strict": true,
+    "noImplicitAny": true,
     "paths": {
       "_components/*": [
         "src/components/*"
@@ -35,7 +36,10 @@
       "_assets/*": [
         "src/assets/*"
       ]
-    }
+    },
+//    "include": [
+//      "src"
+//    ]
   }
 
   /* Visit https://aka.ms/tsconfig.json to read more about this file */

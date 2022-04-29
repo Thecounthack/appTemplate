@@ -7,7 +7,7 @@
   - Hash name for production
 - Pre commit hook
 - Linter
-  - Js linter
+  - TS linter
   - Styles linter
   - Prettier
 - PWA app 
