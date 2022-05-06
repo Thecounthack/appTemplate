@@ -3,14 +3,14 @@
 }
 
 :root[data-theme='light'] {
+    --main-bg: #212121;
+    --maisn-font-color: #fff;
 }
 
 :root[data-theme='dark'] {
+    --main-bg: #212121;
+    --main-font-color: #fff;
 }
-
-// theme
-$color-bg: #000;
-$color-font: #fff;
 
 // Font
 $font-primary: Sans-serif;

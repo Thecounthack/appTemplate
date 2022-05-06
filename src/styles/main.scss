@@ -12,15 +12,18 @@ html {
 body {
     overflow-x: hidden;
     height: 100%;
-    background-color: $color-bg;
+    background-color: var(--main-bg);
     font: normal 400 1rem/1.2 $font-primary;
-    color: $color-font;
+    color: var(--main-font-color);
     scroll-behavior: smooth;
 
-    & > div:first-child {
-        overflow-y: hidden;
-        height: 100%;
+    div[id='app'] {
+        min-height: 100%;
     }
+}
+
+button {
+    cursor: pointer;
 }
 
 // == [input styles]
@@ -28,19 +31,19 @@ input,
 textarea,
 select {
     border-radius: 0;
-    caret-color: $color-bg;
+    caret-color: var(--main-bg);
     -webkit-appearance: none;
 
     &:-webkit-autofill {
         &,
         &:hover,
         &:focus {
-            box-shadow: 0 0 0 100px $color-font inset;
-            background-color: $color-font !important;
+            box-shadow: 0 0 0 100px var(--main-font-color) inset;
+            background-color: var(--main-font-color) !important;
             filter: none;
-            caret-color: $color-bg;
+            caret-color: var(--main-bg);
             transition: background-color 10000s ease-in-out 0s;
-            -webkit-text-fill-color: $color-bg;
+            -webkit-text-fill-color: var(--main-bg);
 
             &::first-line {
                 // the same as input font

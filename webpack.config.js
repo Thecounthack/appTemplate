@@ -8,7 +8,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = require(__dirname + '/src/configs/config');
 const { META_TITLE, META_DESCRIPTION, META_KEYWORDS } = config;
 
-
 const PUBLIC_PATH = '/';
 const dist = 'public';
 
@@ -19,7 +18,6 @@ module.exports = {
         filename: 'js/[name]-[fullhash:8].js',
         clean: true,
     },
-
 
     module: {
         rules: [
@@ -51,11 +49,12 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
         alias: {
             _components: path.resolve(__dirname, 'src/components/'),
-            _redux: path.resolve(__dirname, 'src/redux/'),
             _styles: path.resolve(__dirname, 'src/styles/'),
+            _redux: path.resolve(__dirname, 'src/redux/'),
             _assets: path.resolve(__dirname, 'src/assets/'),
             _utils: path.resolve(__dirname, 'src/utils/'),
             _configs: path.resolve(__dirname, 'src/configs/'),
+            _services: path.resolve(__dirname, 'src/services/'),
         },
     },
 
